@@ -13,8 +13,7 @@ class Server:
 
         self.s.bind(("",port))
         self.s.listen(100)
-
-        print('Running on IP: '+ip)
+        
         print('Running on port: '+str(port))
 
         while 1:
