@@ -11,7 +11,7 @@ class Server:
         ip = socket.gethostbyname(socket.gethostname())
         port = int(input('Enter desired port --> '))
 
-        self.s.bind((ip,port))
+        self.s.bind(("",port))
         self.s.listen(100)
 
         print('Running on IP: '+ip)
